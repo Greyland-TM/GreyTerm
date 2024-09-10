@@ -8,10 +8,7 @@ ZSH_THEME="af-magic"
 source $ZSH/oh-my-zsh.sh
 bindkey -v
 PATH=~/bin:$PATH
-export XDG_CONFIG_HOME="$HOME/.config/shared"
-# export KITTY_CONFIG_DIRECTORY="$HOME/.config/shared/kitty/kitty.conf"
-# export KITTY_CONFIG_DIRECTORY="$HOME/.config/shared/kitty"
-
+export XDG_CONFIG_HOME="$HOME/.config/shared"	
 
 if [ -x /usr/bin/dircolors ]; then
 	test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
