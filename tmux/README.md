@@ -1,3 +1,0 @@
-
-:q
-tmux-conf
