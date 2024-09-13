@@ -8,7 +8,7 @@ ZSH_THEME="af-magic"
 source $ZSH/oh-my-zsh.sh
 bindkey -v
 PATH=~/bin:$PATH
-export XDG_CONFIG_HOME="$HOME/.config/shared"	
+export XDG_CONFIG_HOME="$HOME/.config"	
 
 if [ -x /usr/bin/dircolors ]; then
 	test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
