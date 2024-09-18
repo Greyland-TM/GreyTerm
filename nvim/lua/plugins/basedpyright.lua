@@ -7,6 +7,7 @@ return {
       basedpyright = {
         settings = {
           basedpyright = {
+            typeCheckingMode = "standard",
             disableLanguageServices = false,
             analysis = {
               autoImportCompletions = true,

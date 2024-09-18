@@ -23,6 +23,7 @@ ln -s ~/.config/shared/dotties/.bash_aliases ~/
 ln -s ~/.config/shared/dotties/.scripts ~/
 ln -s ~/.config/shared/dotties/tmux ~/.tmux
 ln -s ~/.config/shared/fonts ~/.fonts
+ln -s ~/.config/shared/rg ~/.rg
 
 # Clone tpm & cattpuccin for tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
