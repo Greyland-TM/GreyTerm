@@ -1,13 +1,13 @@
 # Start a new tmux session#!/bin/bash
 
+luaver use 5.1
+
 # Setup ngrok and redis
 tmux new-session -d -s ngrok-n-redis
 tmux split-window -h -t ngrok-n-redis:0
 tmux select-pane -t ngrok-n-redis:0.0
-sleep .5
 tmux send-keys 'ngrok-start'
 tmux select-pane -t ngrok-n-redis:0.1
-sleep .5
 tmux send-keys 'redis-server'
 
 # Start a new tmux session with a single window
@@ -23,28 +23,24 @@ tmux split-window -v -t celery:0
 tmux select-pane -t celery:0.0
 tmux send-keys 'cdpb' C-m
 tmux send-keys 'pipenv shell' C-m
-sleep .5
 tmux send-keys 'pa-celery-1' C-m
 
 # Run the second celery server in the second pane
 tmux select-pane -t celery:0.1
 tmux send-keys 'cdpb' C-m
 tmux send-keys 'pipenv shell' C-m
-sleep .5
 tmux send-keys 'pa-celery-2' C-m
 
 # Run the third celery server in the third pane
 tmux select-pane -t celery:0.2
 tmux send-keys 'cdpb' C-m
 tmux send-keys 'pipenv shell' C-m
-sleep .5
 tmux send-keys 'pa-celery-3' C-m
 
 # Run the fourth celery server in the fourth pane
 tmux select-pane -t celery:0.3
 tmux send-keys 'cdpb' C-m
 tmux send-keys 'pipenv shell' C-m
-sleep .5
 tmux send-keys 'pa-celery-4' C-m
 
 # Stqart the development environment

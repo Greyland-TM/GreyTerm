@@ -3,3 +3,4 @@ ln -s ~/.config/shared/kitty ~/.config
 ln -s ~/.config/shared/tmux/.tmux.conf ~/
 ln -s ~/.config/shared/dotties/.zshrc ~/
 ln -s ~/.config/shared/dotties/.bash_aliases ~/
+ln -s ~/.config/shared/rg ~/.rg

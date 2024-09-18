@@ -109,3 +109,19 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
+[ -s ~/.luaver/luaver ] && . ~/.luaver/luaver
+
+[ -s ~/.luaver/luaver ] && . ~/.luaver/luaver
+[ -s ~/.luaver/completions/luaver.bash ] && . ~/.luaver/completions/luaver.bash
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+source ~/.rg/rgf
+
+RG_EXCLUDES=(build target node node_modules bower_components \
+                   '.idea' '.settings' '.git' '.svn' '.gradle' '*min.js' '*min.css' '*js.map' '*css.map')
+
+alias rG='noglob rgf -f ${=${(j: -f :)RG_EXCLUDES}}'
+alias rg='rG -i'
+
+declare -a lastoutput
