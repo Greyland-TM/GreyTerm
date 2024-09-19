@@ -4,7 +4,7 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 plugins=(git)
-ZSH_THEME="af-magic"
+ZSH_THEME="crunch"
 source $ZSH/oh-my-zsh.sh
 bindkey -v
 PATH=~/bin:$PATH
@@ -125,3 +125,5 @@ alias rG='noglob rgf -f ${=${(j: -f :)RG_EXCLUDES}}'
 alias rg='rG -i'
 
 declare -a lastoutput
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
