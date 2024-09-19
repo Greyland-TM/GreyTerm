@@ -1,0 +1,1 @@
+/home/greylandmiller/.config/shared/dotties/.tmux
