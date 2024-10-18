@@ -9,3 +9,5 @@ Setup
 
 3: To get tmux working propely you need to run: "tmux source-file ~/.{path-to/tmux.conf}"
         
+Useful commands: 
+setxkbmap -option caps:swapescape 
