@@ -12,7 +12,7 @@ return {
       ensure_installed = {
         "lua_ls",
         "arduino_language_server",
-        "clangd",
+        "clangd"
         -- add more arguments for adding more language servers
       },
     },
@@ -24,6 +24,7 @@ return {
     opts = {
       ensure_installed = {
         "stylua",
+        "svelte-language-server"
         -- add more arguments for adding more null-ls sources
       },
     },
