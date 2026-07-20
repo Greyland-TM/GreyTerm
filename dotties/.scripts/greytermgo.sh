@@ -3,6 +3,7 @@
 #	1: neovim version 10+
 #	2: Node or nvm
 #	3: python or pyenv
+#	4: bew
 #
 # Additional Notes:
 # If everything installed successfully run "<leader>+i" from within tmux to install plugins
