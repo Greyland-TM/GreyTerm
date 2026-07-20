@@ -1,8 +1,6 @@
 alias ls='exa --icons -a --group-directories-first'
 alias tr='exa --tree --level=2'
 alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
 alias ngrok-start="ngrok http --domain=darling-bird-tolerant.ngrok-free.app 8000"
 alias pmmm="python manage.py makemigrations"
 alias pmm="python manage.py migrate"
