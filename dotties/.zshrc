@@ -6,7 +6,7 @@ export ZSH="$HOME/.oh-my-zsh"
 plugins=(git)
 ZSH_THEME="crunch"
 source $ZSH/oh-my-zsh.sh
-bindkey -v
+# bindkey -v
 PATH=~/bin:$PATH
 export XDG_CONFIG_HOME="$HOME/.config"	
 
@@ -116,14 +116,15 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 [ -s ~/.luaver/completions/luaver.bash ] && . ~/.luaver/completions/luaver.bash
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-source ~/.rg/rgf
+# source ~/.rg/rgf
 
-RG_EXCLUDES=(build target node node_modules bower_components \
-                   '.idea' '.settings' '.git' '.svn' '.gradle' '*min.js' '*min.css' '*js.map' '*css.map')
+# RG_EXCLUDES=(build target node node_modules bower_components \
+#                    '.idea' '.settings' '.git' '.svn' '.gradle' '*min.js' '*min.css' '*js.map' '*css.map')
 
-alias rG='noglob rgf -f ${=${(j: -f :)RG_EXCLUDES}}'
-alias rg='rG -i'
+# alias rG='noglob rgf -f ${=${(j: -f :)RG_EXCLUDES}}'
+# alias rg='rG -i'
 
 declare -a lastoutput
-
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+ eval "$(direnv hook bash)"
+

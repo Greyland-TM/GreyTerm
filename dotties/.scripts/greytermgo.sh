@@ -9,9 +9,9 @@
 
 if [[ "$PWD" != "$HOME" ]]; then
  echo "Please start this script from your home directory."
+
  exit
 fi
-
 sudo apt upgrade; sudo apt update
 
 # # Install zsh & tree-sitter
@@ -59,12 +59,3 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 git clone https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin
 git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
 tmux source ~/.tmux.conf
-
-# Install brew & dependencies for nvim
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install ripgrep jesseduffield/lazygit/lazygit
-
-# Install neovim from tar
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
-sudo rm -rf ~/opt/nvim
-sudo tar -C /opt -xzf nvim-linux64.tar.gz
