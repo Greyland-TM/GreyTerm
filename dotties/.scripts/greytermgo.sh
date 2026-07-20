@@ -43,7 +43,6 @@ fi
  echo 'kitty.desktop' > ~/.config/xdg-terminals.list
 
 # # Create symbolic links for my shared settings
-mv ~/.config/nvim ~/.config/nvim.gterm_bak; ln -s ~/.config/shared/nvim ~/.config
 mv ~/.config/kitty ~/.config/kitty.gterm_bak; ln -s ~/.config/shared/kitty ~/.config
 mv ~/.tmux.conf ~/.tmux.conf.gterm_bak; ln -s ~/.config/shared/tmux/.tmux.conf ~/
 mv ~/.zshrc ~/.zshrc.gterm_bak; ln -s ~/.config/shared/dotties/.zshrc ~/
