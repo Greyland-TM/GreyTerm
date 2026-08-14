@@ -128,3 +128,19 @@ declare -a lastoutput
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
  eval "$(direnv hook bash)"
 
+# Initate Vacn0
+vcan-up() {
+    if ip link show vcan0 &>/dev/null; then
+        echo "vcan0 already exists"
+    else
+        sudo modprobe vcan 2>/dev/null
+        sudo ip link add dev vcan0 type vcan
+        sudo ip link set vcan0 mtu 16
+        sudo ip link set up vcan0
+        echo "vcan0 is up"
+    fi
+}
+
+vcan-down() {
+    sudo ip link delete vcan0 2>/dev/null && echo "vcan0 removed" || echo "vcan0 wasn't up"
+}
