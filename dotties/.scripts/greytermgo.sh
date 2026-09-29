@@ -52,7 +52,9 @@ mv ~/.scripts ~/.scripts.gterm_bak; ln -s ~/.config/shared/dotties/.scripts ~/
 mv ~/.tmux ~/.tmux.gterm_bak; ln -s ~/.config/shared/dotties/.tmux ~/.tmux
 mv ~/tmux ~/tmux.gterm_bak; ln -s ~/.config/shared/tmux ~/tmux
 mv ~/.fonts ~/.fonts.gterm_bak; ln -s ~/.config/shared/fonts ~/.fonts
-mv ~/.rg ~/.rg.gterm_bak; ln -s ~/.config/shared/rg ~/.rg
+mv ~/.config/waybar ~/.config/waybar.bak; ln -s ~/.config/shared/waybar ~/.config/waybar
+mv ~/.config/hypr ~/.config/hypr.bak; ln -s ~/.config/shared/hypr ~/.config/hypr
+# mv ~/.rg ~/.rg.gterm_bak; ln -s ~/.config/shared/rg ~/.rg
 
 # Clone tpm & cattpuccin for tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
